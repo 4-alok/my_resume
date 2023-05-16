@@ -24,11 +24,11 @@ jobs:
               with:
                   persist-credentials: false
 
+            - name: Install LaTeX packages
+              run: sudo apt-get install texlive-xetex texlive-fonts-recommended
+
             - name: Compile LaTeX document
-              uses: antaljanosbenjamin/compile-latex@v1.0.0
-              with:
-                  file: resume.tex
-                  args: -pdf
+              run: xelatex -interaction=nonstopmode -halt-on-error resume.tex
 
             - name: Post Processing
               run: |
