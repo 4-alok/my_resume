@@ -1,0 +1,287 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Alok}{Kumar Patel}
+{ \urlstyle{same} +91 7250723796 | \href{mailto:kumaralok344@gmail.com}{kumaralok344@gmail.com}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{KIIT University}
+\descript{BTech in Computer Science}
+\location{Oct 2024 | Bhubaneswar, Odisha}
+\location{ CGPA: 7.9}
+\sectionsep
+
+\subsection{D.A.V. Public School, Sec- 4}
+\descript{INTERMEDIATE}
+\location{2020 | Bokaro Steel City, JH}
+\location{ CGPA: 7.2}
+\sectionsep
+
+\subsection{Chinmaya Vidyalaya}
+\descript{HIGH SCHOOL}
+\location{2018 | Bokaro Steel City, JH}
+\location{ CGPA: 7.4}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/4-alok}{\bf 4-alok} \\
+YouTube://  \href{https://www.youtube.com/@4_alokk}{\bf @4\_alokk} \\
+Stackoverflow://  \href{https://stackoverflow.com/users/13206009/alok-kumar}{\bf alok-kumar}\\
+LinkedIn://  \href{https://www.linkedin.com/in/4-alok}{\bf 4-alok} \\
+Twitter://  \href{https://twitter.com/4_alokk}{\bf @4\_alokk} \\
+Insta:// \href{https://iinstagram.com/4_alokk}{\bf@4\_alokk}\\
+Facebook:// \href{https://www.facebook.com/01alok}{\bf 01alok}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Data Structures Algorithm\\
+AI/ML\\
+Natural language processing\\
+Cloud Computing\\
+Operating Systems\\
+DBMS\\
+Big Data\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 100K+ lines:}
+\textbf{Flutter: }GetX framework |Clean
+Architecture |freezed |hive |animation\\BLOC |http |Firebase |Provider \\Unit test |Mockito |more...\\
+\location{Over 10k+ lines:}
+\textbf{AI/ML: }Numpy |Pandas |Matplotlib\\Seaborn |Scikit learn |nltk |TensorFlow |Keras |torch\\
+\textbf{Familiar: }os |google.oauth2\\googleapiclient | more...\\
+\textbf{Graphic: }Adobe XD |Photoshop |After Effect |Primer Pro |Figma |Blender\\Google SketchUP |Unreal Engine 4\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Work EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+
+\runsubsection{KYLO APPS}
+\descript{| Flutter Developer}
+\location{Apr 2022 - May 2022 | Remote}
+\begin{tightemize}
+\vspace{\topsep}
+\item Created over 30+ screens and integrating QR scanning and deep linking features.
+\item Successfully connected API endpoints to ensure seamless app functionality.
+\item Created a user-friendly and visually appealing interface based on provided design.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Vulmiqi}
+\descript{| Flutter Developer }
+\location{Dec 2021 – Mar 2022 | Remote}
+\begin{tightemize}
+\item Developed a Flutter-based visiting card app for multiple businesses at Vulmiqi.
+\item Created an intuitive and user-friendly interface to facilitate seamless navigation and usage.
+\item Employed best practices to ensure app functionality and stability.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Work EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project Experience}
+
+% \datecolor{April 2021} \runsubsection{Recite: Text-to-speech app for web & PDF}
+% \descript{}
+% \noindent
+% \hspace{5em}%
+% \begin{minipage}{0.85\textwidth\vspace{2pt}}
+% Created a feature-rich text-to-speech programme with sophisticated functions such as PDF integration, NLP-based phrase detection, and Google TTS implementation.
+% Implemented complex UI components and managed caching for optimal performance.
+% Reached 10,000+ downloads.
+% \end{minipage}
+% \descriptright{Flutter, Dart, Kotlin, Java}
+
+\runsubsection {Recite: Text-to-speech app}
+\vspace{\topsep}
+\begin{tightemize}
+{\fontsize{10}{12}\selectfont \textbf{Led the team} in developing a feature-rich text-to-speech app with sophisticated functions such as \textbf{PDF integration, NLP-based phrase detection, and Google TTS} implementation. Implemented complex UI components and managed caching for optimal performance.
+Reached \textbf{10,000+} downloads.}
+\end{tightemize}
+\descriptright{Flutter, Dart, Kotlin, Java}
+\sectionsep
+
+\runsubsection{Class Link}\hfill {open source}
+% \descript{open source}
+\vspace{\topsep}
+\begin{tightemize}
+{\fontsize{10}{12}\selectfont A fully production level app with a user-friendly UI that allows users to view their current class with just one click, access holidays list, resources (notes and PYQs), and more. Over \textbf{3K+ active users} opening the app approximately 5 times a day. Features include a great user-friendly UI, easy access to current class, holidays list, resources, and more.
+\end{tightemize}
+\descriptright{Flutter, Dart, Python, Go}
+\sectionsep
+
+\runsubsection{draggable\_home}\hfill {open source}
+% \descript{open source}
+\vspace{\topsep}
+\begin{tightemize}
+{\fontsize{10}{12}\selectfont Created and maintained a popular Flutter package, draggable\_home for implementing sliding up and fully-stretchable features. Received \textbf{400+ likes on pub.dev} and gained \textbf{100+ stars} on GitHub for the "draggable\_home" package. Currently used by \textbf{170+ projects}, showcasing its popularity and wide adoption in the Flutter community.
+\end{tightemize}
+\descriptright{Flutter, Dart}
+\sectionsep
+
+\sectionsep
+\runsubsection {file\_manager}\hfill {open source}
+\vspace{\topsep}
+\begin{tightemize}
+{\fontsize{10}{12}\selectfont Developed FileManager package for Flutter with \textbf{100+ likes} on pub.dev and \textbf{50+ stars} on GitHub. Created intuitive widget for file and folder management, seamlessly integrating with Flutter framework. Used by over \textbf{100} developers, providing powerful file management features for Flutter applications.
+\end{tightemize}
+\descriptright{Flutter, Dart}
+\sectionsep
+
+\sectionsep
+\runsubsection {DevsOnFlutter : Flutter Open-Source Community}\\
+\location{June 2021 - Present}
+\vspace{\topsep}
+\begin{tightemize}
+{\fontsize{10}{12}\selectfont I created and manage the \textbf{DevsOnFlutter Github page}, which is a popular open-source community for Flutter developers. With a demonstrated expertise in working with and \textbf{contributing to open-source} projects related to Flutter, I am recognized in the Flutter community for my contributions and expertise.
+\end{tightemize}
+\sectionsep
+
+
+% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % %     RESEARCH
+% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+
+% \end{tabular}
+% \sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     PUBLICATIONS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
