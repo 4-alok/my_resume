@@ -28,7 +28,7 @@ jobs:
               run: sudo apt-get install texlive-xetex texlive-fonts-recommended
 
             - name: Compile LaTeX document
-              run: xelatex -interaction=nonstopmode -halt-on-error resume.tex
+              run: xelatex -interaction=nonstopmode resume.tex
 
             - name: Post Processing
               run: |
