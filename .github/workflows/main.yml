@@ -18,16 +18,11 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Install and Build 
-      run: |
-        npm install
-        npm run build  # Replace this with actual build command
-
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Adjust this to directory where resume.pdf is located
+        publish_dir: ./resume.pdf  # Adjust this to directory where resume.pdf is located
         publish_branch: gh-pages  # GitHub Pages branch
         user_name: 'github-actions[bot]'  # GitHub Actions bot
         user_email: 'github-actions[bot]@users.noreply.github.com'  # GitHub Actions bot email
