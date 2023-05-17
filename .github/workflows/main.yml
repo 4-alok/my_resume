@@ -17,9 +17,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./resume.pdf
+        publish_dir: ./build/resume.pdf
         publish_branch: gh-pages
         force_orphan: true
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: 'Automated deployment to GitHub Pages on ${GITHUB_REF} @ ${GITHUB_SHA} by GitHub Actions'
