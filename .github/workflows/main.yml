@@ -24,11 +24,14 @@ jobs:
               with:
                   persist-credentials: false
 
-            - name: Install LaTeX packages
-              run: sudo apt-get install texlive-xetex texlive-fonts-recommended
-
-            - name: Compile LaTeX document
-              run: xelatex -interaction=nonstopmode resume.tex
+            - uses: xu-cheng/latex-action@v2
+              with:
+                root_file: resume.tex
+                extra_fonts: |
+                  ./fonts/calibri/*.ttf
+                  ./fonts/lato/*.ttf
+                  ./fonts/raleway/*.otf
+                latexmk_args: -xelatex -file-line-error -interaction=nonstopmode
 
             - name: Post Processing
               run: |
