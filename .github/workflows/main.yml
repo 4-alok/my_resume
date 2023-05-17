@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
+      - main  # Set a branch to trigger deployment
 
 jobs:
   build-and-deploy:
@@ -18,7 +18,8 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./resume.pdf
-        publish_branch: gh-pages 
+        publish_branch: gh-pages
+        force_orphan: true
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_message: 'Automated deployment to GitHub Pages on ${GITHUB_REF} @ ${GITHUB_SHA} by GitHub Actions'
