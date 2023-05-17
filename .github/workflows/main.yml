@@ -31,7 +31,7 @@ jobs:
                   ./fonts/calibri/*.ttf
                   ./fonts/lato/*.ttf
                   ./fonts/raleway/*.otf
-                latexmk_args: -xelatex -file-line-error -halt-on-error -interaction=nonstopmode
+                latexmk_args: -LuaTeX -file-line-error -halt-on-error -interaction=nonstopmode
 
             - name: Post Processing
               run: |
